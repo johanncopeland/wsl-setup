@@ -23,8 +23,6 @@ cat ./ssh-scripts >> ~/.profile
 # Set custom aliases to kill ssh-agent quickly
 cat ./aliases >> ~/.profile
 
-# Copy .vimrc
-cp vimrc ~/.vimrc
 # Copy .gitconfig
 cp gitconfig ~/.gitconfig
 
