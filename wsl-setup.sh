@@ -6,13 +6,13 @@ WIN_USERNAME=$1
 umask 077
 if [ ! -d ~/.ssh ]
 then
-  cp -r /mnt/c/Users/$WIN_USERNAME/.ssh ~/
+  cp -r /mnt/d/Users/$WIN_USERNAME/.ssh ~/
   chmod 600 ~/.ssh/config
   chmod 400 ~/.ssh/id*
 fi
 
-# Set less annoying permissions, this is just so I don't get annoying green bars when listing directories (Please don't judge me)
-echo "\n#Setting less annoying permissions\numask 077\n" >> ~/.profile
+# Set less annoying permissions, this is just so I don't get annoying green bars when listing directories
+# echo "\n#Setting less annoying permissions\numask 077\n" >> ~/.profile
 
 # Set up passwordless sudo
 echo "echo \"$USER ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers" | sudo bash
