@@ -40,7 +40,7 @@ sed -i "s/#   StrictHostKeyChecking ask/    StrictHostKeyChecking no/g"
 sudo apt autoremove --purge -y
 sudo apt clean all
 
-## Debian specific stuff ends here
+## Debian/Ubuntu specific stuff ends here
 
 # Delete this script
 rm -rf ~/wsl-setup
